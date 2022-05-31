@@ -11,7 +11,7 @@ pthread_mutex_t aLock;
 void increment(int *arg)
 {
     int i;
-    for (i = 1; i <= 1000 ; i++)
+    for (i = 1; i <= 100 ; i++)
     {
         SALDO = SALDO + 1;
         printf("incremento => <thread %d>: %lld\n", *arg, SALDO);
@@ -24,7 +24,7 @@ void decrement(int *arg)
     int i;
 
 
-    for (i = 1; i <= 1000 ; i++)
+    for (i = 1; i <= 100 ; i++)
     
     {
         SALDO = SALDO - 1;
@@ -61,6 +61,6 @@ int main()
 
 
 
-    printf("%lld\n",SALDO);
+        printf("O Saldo final %lld\n",SALDO);
     return 0;
 }
