@@ -11,10 +11,11 @@ pthread_mutex_t aLock;
 void increment(int *arg)
 {
     int i;
-    for (i = 1; i <= 100 ; i++)
+    for (i = 1; i <= 10000 ; i++)
     {
         SALDO = SALDO + 1;
         printf("incremento => <thread %d>: %lld\n", *arg, SALDO);
+
     }
 }
 
@@ -24,7 +25,7 @@ void decrement(int *arg)
     int i;
 
 
-    for (i = 1; i <= 100 ; i++)
+    for (i = 1; i <= 10000 ; i++)
     
     {
         SALDO = SALDO - 1;
@@ -45,7 +46,7 @@ int main()
     SALDO = 0;
 
 
-    for (int j=0; j< 2*quant; j+=2){
+    for (int j=0; j< quant; j+=2){
         int temp = j+1;
         pthread_create(&thread_group[j], NULL, (void*)&increment, &temp);  // Create a new thread for threadFunc
         pthread_create(&thread_group[j+1], NULL, (void*)&decrement, &temp+1);  // Create a new thread for threadFunc
