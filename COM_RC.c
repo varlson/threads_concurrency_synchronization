@@ -44,7 +44,7 @@ int main()
     int quant =22;
     printf("Entre com pares de threads: ");
     scanf("%d", &quant);
-     pthread_t *thread_group = malloc(sizeof(pthread_t) * quant);
+     pthread_t *thread_group = malloc(sizeof(pthread_t) * quant*2);
     int i;
     SALDO = 0;
 
