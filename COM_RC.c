@@ -11,7 +11,7 @@ pthread_mutex_t aLock;
 void increment(int *arg)
 {
     int i;
-    for (i = 1; i <= 1000 ; i++)
+    for (i = 1; i <= 10000 ; i++)
     {
         pthread_mutex_lock(&aLock); // Lock a mutex for a
         SALDO = SALDO + 1;
@@ -26,7 +26,7 @@ void decrement(int *arg)
     int i;
 
 
-    for (i = 1; i <= 1000 ; i++)
+    for (i = 1; i <= 10000 ; i++)
     
     {
         pthread_mutex_lock(&aLock); // Lock a mutex for a
