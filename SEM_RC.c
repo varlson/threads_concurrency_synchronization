@@ -45,7 +45,7 @@ int main()
     SALDO = 0;
 
 
-    for (int j=0; j< quant; j+=2){
+    for (int j=0; j< 2*quant; j+=2){
         int temp = j+1;
         pthread_create(&thread_group[j], NULL, (void*)&increment, &temp);  // Create a new thread for threadFunc
         pthread_create(&thread_group[j+1], NULL, (void*)&decrement, &temp+1);  // Create a new thread for threadFunc
