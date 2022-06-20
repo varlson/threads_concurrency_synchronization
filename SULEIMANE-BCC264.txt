@@ -1,0 +1,17 @@
+Nome: SULEIMANE DUCURE
+Turma: 11
+Disciplina: BCC264 - SISTEMAS OPERACIONAIS
+
+Instrucoes para executar o codigo
+        - Para codigo sem regiao critica, cujo ficheiro SEM_RC.cpp, utilize seguintes comandos para roda-lo:
+                digite: "make SEM_RC" -> para compilar e gerar arquivo objeto com nome "sem"
+                digite: "make RUN_SEM_RC" => para executar o arquivo objeto
+
+
+        - Parao codigo com regiao critica,cujo ficheiro COM_RC.cpp, digite seguintes comandos:
+                digite: "make COM_RC" -> para compilar e gerar o arquivo objeto com nome "com"
+                digite: "make RUN_COM_RC" => para executar o arquivo objeto
+
+        - Parao codigo com std::atomic ,cujo ficheiro ATOMIC.cpp, digite seguintes comandos:
+                digite: "make COM_ATOMIC" -> para compilar e gerar o arquivo objeto com nome "atomic"
+                digite: "make RUN_ATOMIC" => para executar o arquivo objeto
